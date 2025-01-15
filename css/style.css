@@ -1,0 +1,111 @@
+/* FONTE IMPORTADA DO SITE GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+* {
+
+    margin: 0; /* SEM MARGEM */
+    padding: 0; /* SEM PREENCHIMENTO */
+}
+
+/* CSS PARA O BODY. */
+body {
+
+    /*  height: 100vh; 100% DO NAVEGADOR - VIEWPORT */
+    box-sizing: border-box; /* AJUSTA ELEMENTO FILHO AO TAMANHO DO ELEMENTO PAI */
+    color: white;
+    background-color: black;
+    
+}
+
+/* CSS DA CLASS FEATURED__TITLE */
+.featured__title{
+
+    color: rgb(13, 150, 86);
+}
+
+/* CSS DA CLASS HIGHLIGHT__LINE */
+.highlight__line {
+
+    color: red;
+}
+
+.text__img {
+
+    display: flex; /* UTILIZADO PARA ORDERNAR OS ELEMENTOS EM LINHA */
+    align-items: center; /* CENTRALIZA OS ITENS (CONTEÚDO) */
+    justify-content: space-between; /* ESPAÇAMENTO ENTRE OS ELEMENTOS */
+    padding: 8% 15%; /* MARGEM - PRIMEIRO VALOR VERTICAL - SEGUNDO VALOR HORIZONTAL */
+}
+
+.pag__content {
+
+    width: 615px; /* LARGURA */
+    display: flex;
+    flex-direction: column; /* ESTILO COLUNA */
+    gap: 40px; /* ESPAÇAMENTO ENTRE CADA UM DOS ELEMENTOS FILHOS */
+
+}
+
+.pag__title {
+
+    font-size: 36px;
+    font-family: "Bebas Neue", serif;
+}
+
+.pag__text {
+
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.pag__links {
+
+    display: flex;
+    flex-direction: column; /* AJUSTAR OS ITENS EM FORMATO COLUNA */
+    justify-content: space-between;
+    align-items: center; /* ALINHA OS ITENS NO CENTRO */
+    gap: 32px; /* ESPAÇAMENTO ENTRE ITENS */
+}
+
+.links__link {
+
+    color: #F6F6F6;
+    border: 2px solid #22D4FD; /* ADICIONA UMA BORDA COM EXPESSURA */
+    width: 358px;
+    text-align: center; /* ALINHAR TEXTO */
+    border-radius: 8px; /* DEFINE O ESTILO DAS BORDAS */
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0; /* ESPAÇAMENTO - PRIMEIRO VALOR VERTICAL - SEGUNDO VALOR HORIZONTAL */
+    text-decoration: none; /* SEM DECORAÇÃO NO TEXTO */
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.title__links__link {
+
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+/* ESTILO AO PASSAR O PONTEIRO POR CIMA */
+.links__link:hover{
+
+    background-color: rgb(29, 52, 122);
+}
+
+.rodape{
+
+    padding: 24px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: #22D4FD;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
