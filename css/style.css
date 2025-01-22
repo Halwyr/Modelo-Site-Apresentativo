@@ -2,6 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,600;1,600&display=swap');
 
+/* VARIÁVEL PARA AS CORES AZUL/PRETA/BRANCA E FONTES */
+:root{
+
+    --cor-principal: #22D4FD;
+    --cor-textos: #F4F4F4;
+    --cor-secundaria: #000000;
+    --font-principal: 'Montserrast' sans-serif;
+    --font-secundaria: "Bebas Neue", serif;
+    --font-terciaria: 'Krona One', sans-serif;
+}
+
 * {
 
     margin: 0; /* SEM MARGEM */
@@ -13,9 +24,32 @@ body {
 
     /*  height: 100vh; 100% DO NAVEGADOR - VIEWPORT */
     box-sizing: border-box; /* AJUSTA ELEMENTO FILHO AO TAMANHO DO ELEMENTO PAI */
-    color: white;
-    background-color: black;
+    color: var(--cor-textos);
+    background-color: var(--cor-secundaria);
     
+}
+
+/* CSS PARA CABEÇALHO */
+.header__info {
+
+    padding: 2% 0% 0% 15%;
+}
+
+/* CSS PARA DISTANCIAR CABEÇALHOS */
+.header__menu {
+
+    display: flex;
+    gap:80px;
+}
+
+/* CSS PARA CABEÇALHOS SUPERIORES */
+.header__linked__menu {
+
+    font-family: var(--font-principal);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-principal);
+    text-decoration: none; /* RETIRA A DECORAÇÃO DO TEXTO */
 }
 
 /* CSS DA CLASS FEATURED__TITLE */
@@ -35,7 +69,7 @@ body {
     display: flex; /* UTILIZADO PARA ORDERNAR OS ELEMENTOS EM LINHA */
     align-items: center; /* CENTRALIZA OS ITENS (CONTEÚDO) */
     justify-content: space-between; /* ESPAÇAMENTO ENTRE OS ELEMENTOS */
-    padding: 8% 15%; /* MARGEM - PRIMEIRO VALOR VERTICAL - SEGUNDO VALOR HORIZONTAL */
+    padding: 5% 15%; /* MARGEM - PRIMEIRO VALOR VERTICAL - SEGUNDO VALOR HORIZONTAL */
 }
 
 .pag__content {
@@ -50,13 +84,13 @@ body {
 .pag__title {
 
     font-size: 36px;
-    font-family: "Bebas Neue", serif;
+    font-family: var(--font-secundaria);
 }
 
 .pag__text {
 
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-principal);
 }
 
 .pag__links {
@@ -68,10 +102,10 @@ body {
     gap: 32px; /* ESPAÇAMENTO ENTRE ITENS */
 }
 
-.links__link {
+.social__links {
 
-    color: #F6F6F6;
-    border: 2px solid #22D4FD; /* ADICIONA UMA BORDA COM EXPESSURA */
+    color: var(--cor-textos);
+    border: 2px solid var(--cor-principal); /* ADICIONA UMA BORDA COM EXPESSURA */
     width: 358px;
     text-align: center; /* ALINHAR TEXTO */
     border-radius: 8px; /* DEFINE O ESTILO DAS BORDAS */
@@ -79,33 +113,40 @@ body {
     font-weight: 600;
     padding: 21.5px 0; /* ESPAÇAMENTO - PRIMEIRO VALOR VERTICAL - SEGUNDO VALOR HORIZONTAL */
     text-decoration: none; /* SEM DECORAÇÃO NO TEXTO */
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--font-principal);
     display: flex;
     justify-content: center;
     gap: 16px;
 }
 
-.title__links__link {
+.title__social__link {
 
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--font-terciaria);
     font-weight: 400;
     font-size: 24px;
 }
 
 /* ESTILO AO PASSAR O PONTEIRO POR CIMA */
-.links__link:hover{
+.social__links:hover{
 
     background-color: rgb(29, 52, 122);
 }
 
-.rodape{
+/* CSS PARA O RODAPÉ DA PÁGINA */
+.baseboard{
 
     padding: 24px;
     text-align: center;
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-principal);
     font-weight: 400;
-    background-color: #22D4FD;
-    color: rgb(0, 0, 0);
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
     padding: 10px;
+}
+
+.profile {
+
+    width: 50%;
+    height: 50%;
 }
