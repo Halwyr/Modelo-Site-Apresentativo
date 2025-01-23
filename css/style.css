@@ -5,12 +5,11 @@
 /* VARIÁVEL PARA AS CORES AZUL/PRETA/BRANCA E FONTES */
 :root{
 
-    --cor-principal: #22D4FD;
+    --cor-principal: #898121;
     --cor-textos: #F4F4F4;
     --cor-secundaria: #000000;
-    --font-principal: 'Montserrast' sans-serif;
-    --font-secundaria: "Bebas Neue", serif;
-    --font-terciaria: 'Krona One', sans-serif;
+    --font-principal: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
 }
 
 * {
@@ -45,7 +44,7 @@ body {
 /* CSS PARA CABEÇALHOS SUPERIORES */
 .header__linked__menu {
 
-    font-family: var(--font-principal);
+    font-family: var(--font-secundaria);
     font-size: 24px;
     font-weight: 600;
     color: var(--cor-principal);
@@ -84,13 +83,13 @@ body {
 .pag__title {
 
     font-size: 36px;
-    font-family: var(--font-secundaria);
+    font-family: var(--font-principal);
 }
 
 .pag__text {
 
     font-size: 24px;
-    font-family: var(--font-principal);
+    font-family: var(--font-secundaria);
 }
 
 .pag__links {
@@ -113,7 +112,7 @@ body {
     font-weight: 600;
     padding: 21.5px 0; /* ESPAÇAMENTO - PRIMEIRO VALOR VERTICAL - SEGUNDO VALOR HORIZONTAL */
     text-decoration: none; /* SEM DECORAÇÃO NO TEXTO */
-    font-family: var(--font-principal);
+    font-family: var(--font-secundaria);
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -121,7 +120,7 @@ body {
 
 .title__social__link {
 
-    font-family: var(--font-terciaria);
+    font-family: var(--font-secundaria);
     font-weight: 400;
     font-size: 24px;
 }
@@ -138,9 +137,9 @@ body {
     padding: 24px;
     text-align: center;
     font-size: 24px;
-    font-family: var(--font-principal);
+    font-family: var(--font-secundaria);
     font-weight: 400;
-    background-color: var(--cor-principal);
+    background-color: #C4D9FF;
     color: var(--cor-secundaria);
     padding: 10px;
 }
